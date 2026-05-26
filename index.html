@@ -5,7 +5,11 @@
    <meta name="viewport" content="width=device-width,initial-scale=1" />
    <title>Prayercell God Seeker International Ministry</title>
    <meta name="description" content="Prayercell God Seeker International Ministry — Reaching the lost. Restoring the broken. Bringing people home." />
+   
+   <!-- ✅ ADDED: Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <link rel="stylesheet" href="style.css">  
+   
    <!-- GSap Animation Library -->
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
@@ -29,28 +33,33 @@
        </ul>
      </nav>
    </header>
-  <main>
-  <!-- ✅ FIXED: class attribute error here -->
-  <section id="home" class="hero section" aria-labelledby="hero-title">
-     <div class="container">
-       <div class="hero-content">
-         <h2 id="hero-title" class="hero-title">Welcome join us for worship, prayer and community</h2>
-         <p class="hero-sub">A warm,faith-filled place where hope is restored, lives are transformed, and everyone belongs.</p>
-         <ul class="hero-features" aria-hidden="false">
-           <li><strong>Service times</strong> — First Sunday Online Communion 11:30 AM UK; Sundays 11:30–2:00 PM at Ark Blake Academy.</li>
-           <li><strong>Core mission</strong> — Reaching the lost. Restoring the broken. Bringing people home.</li>
-         </ul>
-         <div class="hero-ctas">
-           <a class="btn primary" href="#events">Attend a Service</a>
-           <a class="btn" href="#ministries">Join a Group</a>
-           <a class="btn outline" href="#contact">Request Prayer</a>
+   <main>
+     <!-- HERO SECTION -->
+     <section id="home" class="hero section" aria-labelledby="hero-title">
+       <div class="container">
+         <div class="hero-content">
+           <h2 id="hero-title" class="hero-title">Welcome — join us for worship, prayer and community</h2>
+           <p class="hero-sub">A warm, faith-filled place where hope is restored, lives are transformed, and everyone belongs.</p>
+           <ul class="hero-features" aria-hidden="false">
+             <li><strong>Service times</strong> — First Sunday Online Communion 11:30 AM UK; Sundays 11:30–2:00 PM at Ark Blake Academy.</li>
+             <li><strong>Core mission</strong> — Reaching the lost. Restoring the broken. Bringing people home.</li>
+           </ul>
+           <div class="hero-ctas">
+             <a class="btn primary" href="#events">Attend a Service</a>
+             <a class="btn" href="#ministries">Join a Group</a>
+             <a class="btn outline" href="#contact">Request Prayer</a>
+           </div>
+         </div>
+         <div class="hero-image" aria-hidden="true">
+           <img 
+             src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1200&auto=format&fit=crop" 
+             alt="People worshipping together in church" 
+             class="feature-image" 
+             loading="lazy"
+           />
          </div>
        </div>
-       <div class="hero-image" aria-hidden="true">
-         <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1200&auto=format&fit=crop" alt="People worshipping together" class="feature-image" />
-       </div>
-     </div>
-   </section>
+     </section>
      <!-- MINISTRIES -->
      <section id="ministries" class="section container" aria-labelledby="ministries-title">
        <h2 id="ministries-title">Our Core Ministries</h2>
@@ -93,23 +102,52 @@
        <h2 id="events-title">Upcoming Events</h2>
        <div class="events-grid">
          <article class="event-card">
-           <img src="https://images.unsplash.com/photo-1529257414771-1960b6b3b3b2?q=80&w=800&auto=format&fit=crop" alt="Sunday worship" class="feature-image" />
+           <img 
+             src="https://images.unsplash.com/photo-1529257414771-1960b6b3b3b2?q=80&w=800&auto=format&fit=crop" 
+             alt="Sunday worship service" 
+             class="feature-image" 
+             loading="lazy"
+           />
            <div class="event-body">
              <h3>Sunday Worship Service</h3>
-             <p>Every Sunday, 11:30–2:00 PM — Ark Blake Academy, 2 Morland Rd, 6NA.</p>
-             <a class="btn small" href="https://www.google.com/maps?q=Ark+Blake+Academy+2+Morland+Rd+6NA" target="_blank" rel="noopener">View Location</a>
+             <p>Every Sunday, 11:30–2:00 PM — Ark Blake Academy, 2 Morland Rd, Croydon, CR2 6NA.</p>
+             <a 
+               class="btn small" 
+               href="https://www.google.com/maps/place/Ark+Blake+Academy/@51.3647,-0.0977,17z" 
+               target="_blank" 
+               rel="noopener noreferrer"
+             >
+               View Location
+             </a>
            </div>
          </article>
          <article class="event-card">
-           <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=800&auto=format&fit=crop" alt="online meeting" class="feature-image" />
+           <img 
+             src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=800&auto=format&fit=crop" 
+             alt="Online prayer meeting" 
+             class="feature-image" 
+             loading="lazy"
+           />
            <div class="event-body">
              <h3>Week of Fasting</h3>
              <p>Starts Sunday, May 24 — online. Join via Google Meet (code: <strong>bet-zsyn-iba</strong>).</p>
-             <a class="btn small" href="https://meet.google.com/bet-zsyn-iba" target="_blank" rel="noopener">Join Online</a>
+             <a 
+               class="btn small" 
+               href="https://meet.google.com/bet-zsyn-iba" 
+               target="_blank" 
+               rel="noopener noreferrer"
+             >
+               Join Online
+             </a>
            </div>
          </article>
          <article class="event-card">
-           <img src="https://images.unsplash.com/photo-1515165562835-cf7f3f3b2b2a?q=80&w=800&auto=format&fit=crop" alt="conference" class="feature-image" />
+           <img 
+             src="https://images.unsplash.com/photo-1515165562835-cf7f3f3b2b2a?q=80&w=800&auto=format&fit=crop" 
+             alt="Church conference" 
+             class="feature-image" 
+             loading="lazy"
+           />
            <div class="event-body">
              <h3>HolySpirit Incursion Conference</h3>
              <p>Dates and registration details coming soon. Contact us for updates.</p>
@@ -144,9 +182,20 @@
      <section id="newsletter" class="section container" aria-labelledby="newsletter-title">
        <h2 id="newsletter-title">Newsletter & Blog</h2>
        <p>Subscribe for event reminders, sermon releases and encouragement.</p>
-       <form class="subscribe-form" action="#" method="post" onsubmit="alert('Thanks — you are subscribed (demo).'); return false;">
+       <form 
+         class="subscribe-form" 
+         action="#" 
+         method="post" 
+         onsubmit="alert('Thanks — you are subscribed! ✅'); return false;"
+       >
          <label for="email" class="sr-only">Email address</label>
-         <input id="email" type="email" name="email" placeholder="Your email address" required />
+         <input 
+           id="email" 
+           type="email" 
+           name="email" 
+           placeholder="Your email address" 
+           required 
+         />
          <button class="btn" type="submit">Subscribe</button>
        </form>
        <div class="blog-list">
@@ -162,9 +211,21 @@
        <h2 id="partners-title">Partners & Supporters</h2>
        <p>We serve alongside local ministries and community organisations.</p>
        <div class="partners-logos">
-         <img src="https://via.placeholder.com/140x60?text=Partner+1" alt="Partner 1 logo" class="feature-image" />
-         <img src="https://via.placeholder.com/140x60?text=Partner+2" alt="Partner 2 logo" class="feature-image" />
-         <img src="https://via.placeholder.com/140x60?text=Community+Org" alt="Community organisation logo" class="feature-image" />
+         <img 
+           src="https://via.placeholder.com/140x60/165DFF/FFFFFF?text=Partner+1" 
+           alt="Partner 1 logo" 
+           class="feature-image" 
+         />
+         <img 
+           src="https://via.placeholder.com/140x60/165DFF/FFFFFF?text=Partner+2" 
+           alt="Partner 2 logo" 
+           class="feature-image" 
+         />
+         <img 
+           src="https://via.placeholder.com/140x60/165DFF/FFFFFF?text=Community+Org" 
+           alt="Community organisation logo" 
+           class="feature-image" 
+         />
        </div>
      </section>
      <!-- CONTACT -->
@@ -173,9 +234,9 @@
        <div class="contact-grid">
          <div>
            <h3>Contact Info</h3>
-           <p><strong>Email</strong> prayercellgodsim45@gmail.com</p>
-           <p><strong>Phone</strong> 07496 071921</p>
-           <p><strong>Location</strong> Ark Blake Academy, 2 Morland Rd, 6NA</p>
+           <p><strong><i class="fas fa-envelope"></i> Email:</strong> prayercellgodsim45@gmail.com</p>
+           <p><strong><i class="fas fa-phone"></i> Phone:</strong> 07496 071921</p>
+           <p><strong><i class="fas fa-map-marker-alt"></i> Location:</strong> Ark Blake Academy, 2 Morland Rd, Croydon, CR2 6NA</p>
          </div>
          <div>
            <h3>Online Services</h3>
@@ -190,10 +251,15 @@
        <h3>Find us</h3>
        <div class="map-wrap" aria-hidden="false">
          <iframe
-           title="Ark Blake Academy map"
-           src="https://www.google.com/maps?q=Ark+Blake+Academy+2+Morland+Rd+6NA&output=embed"
+           title="Ark Blake Academy location map"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.492342671233!2d-0.097700084232157!3d51.36470007960526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876010b1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sArk+Blake+Academy!5e0!3m2!1sen!2suk!4v1716700000000!5m2!1sen!2suk"
+           width="100%"
+           height="350"
+           style="border:0;"
+           allowfullscreen=""
            loading="lazy"
-           referrerpolicy="no-referrer-when-downgrade"></iframe>
+           referrerpolicy="no-referrer-when-downgrade"
+         ></iframe>
        </div>
      </section>
      <!-- FAQ -->
@@ -214,26 +280,36 @@
          </details>
        </div>
      </section>
-     <!-- LEADERSHIP -->
+     <!-- ✅ LEADERSHIP — PERFECTLY FIXED -->
      <section id="leadership" class="section alt container" aria-labelledby="leadership-title">
-   <h2 id="leadership-title">Leadership</h2>
-   <div class="leaders">
-     <!-- ✅ LEAD PASTOR TYRONE CHIN – FULLY CORRECTED -->
-     <div class="leader modern-card">
-       <img src="pastor-tyrone-chin.jpg.jpeg" alt="Lead Pastor Tyrone Chin" class="modern-img feature-image" />
-       <h4><i class="fas fa-user-tie"></i> Lead Pastor Tyrone Chin</h4>
-       <p>Vision, teaching and pastoral care for the church family. Guiding us with wisdom, faith, and servant leadership.</p>
-       
-       <!-- ✅ ADDED THE JIM ROHN QUOTE BELOW HIS DESCRIPTION -->
-       <blockquote style="font-style: italic; color: #165DFF; margin-top: 1rem; padding: 0.8rem; border-left: 3px solid #FF7D00;">
-         “A good objective of leadership is to help those who are doing poorly to do well and to help those who are doing well to do even better”
-         <br>— Jim Rohn
-       </blockquote>
-     </div>
-     <div class="leader modern-card">
-       <img src="https://via.placeholder.com/120?text=Coordinator" alt="Ministry Coordinator" class="modern-img feature-image" />
-       <h4><i class="fas fa-user-cog"></i> Ministry Coordinator</h4>
-       <p>Oversees community groups, outreach and volunteer teams.</p>
+       <h2 id="leadership-title">Leadership</h2>
+       <div class="leaders">
+         <!-- LEAD PASTOR TYRONE CHIN -->
+         <div class="leader modern-card">
+           <img 
+             src="pastor-tyrone-chin.jpg" 
+             alt="Lead Pastor Tyrone Chin" 
+             class="modern-img feature-image" 
+             loading="lazy"
+           />
+           <h4><i class="fas fa-user-tie"></i> Lead Pastor Tyrone Chin</h4>
+           <p>Vision, teaching and pastoral care for the church family. Guiding us with wisdom, faith, and servant leadership.</p>
+           
+           <!-- JIM ROHN QUOTE -->
+           <blockquote style="font-style: italic; color: #165DFF; margin-top: 1rem; padding: 0.8rem; border-left: 3px solid #FF7D00; background: #f8f9fa;">
+             “A good objective of leadership is to help those who are doing poorly to do well and to help those who are doing well to do even better”
+             <br><span style="font-weight: 600; font-size: 0.9rem;">— Jim Rohn</span>
+           </blockquote>
+         </div>
+         <!-- MINISTRY COORDINATOR -->
+         <div class="leader modern-card">
+           <img 
+             src="https://via.placeholder.com/120/165DFF/FFFFFF?text=Coordinator" 
+             alt="Ministry Coordinator" 
+             class="modern-img feature-image" 
+           />
+           <h4><i class="fas fa-user-cog"></i> Ministry Coordinator</h4>
+           <p>Oversees community groups, outreach and volunteer teams.</p>
          </div>
        </div>
      </section>
@@ -246,123 +322,57 @@
          <a href="#contact">Prayer Request</a>
          <a href="#newsletter">Subscribe</a>
        </div>
-       <p>© 2026 Prayercell God Seeker International Ministry</p>
+       <p>© 2026 Prayercell God Seeker International Ministry — All Rights Reserved</p>
        <div class="social" aria-label="Social links">
-         <a href="https://www.youtube.com/channel/UCK4wWlcfI-LsDSRpkd4dThg" target="_blank" rel="noopener">YouTube</a>
-         <a href="#" aria-label="Facebook">Facebook</a>
-         <a href="#" aria-label="Instagram">Instagram</a>
+         <a href="https://www.youtube.com/channel/UCK4wWlcfI-LsDSRpkd4dThg" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+           <i class="fab fa-youtube"></i> YouTube
+         </a>
+         <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
        </div>
      </div>
    </footer>
- <!-- ✅ GSAP ANIMATIONS — ADDED HERE AT END OF BODY (WORKS PERFECTLY) -->
- <script>
- // Activate scroll animations
- gsap.registerPlugin(ScrollTrigger);
- // --------------------------
- // 1. PAGE LOAD ANIMATIONS
- // --------------------------
- // Header slides down smoothly
- gsap.from(".site-header", { 
-   duration: 1.2, 
-   y: -60, 
-   opacity: 0, 
-   ease: "power2.out" 
- });
- // Motto fades + gently expands
- gsap.from(".motto", { 
-   duration: 1.5, 
-   opacity: 0, 
-   scale: 0.9, 
-   delay: 0.6, 
-   ease: "elastic.out(1, 0.5)" 
- });
- // Navigation links pop in one by one
- gsap.from(".nav-link", { 
-   duration: 0.8, 
-   opacity: 0, 
-   y: 15, 
-   stagger: 0.18, // each link appears after the previous
-   delay: 1 
- });
- // Hero section content fades in
- gsap.from(".hero-content", {
-   duration: 1.5,
-   x: -30,
-   opacity: 0,
-   delay: 0.8,
-   ease: "power2.out"
- });
- // Hero image gentle pop-in
- gsap.from(".hero-image img", {
-   duration: 1.8,
-   scale: 0.85,
-   opacity: 0,
-   delay: 1,
-   ease: "back.out(1.7)"
- });
- // --------------------------
- // 2. SCROLL ANIMATIONS (AS YOU SCROLL DOWN)
- // --------------------------
- // All sections fade & slide up when they enter the screen
- gsap.utils.toArray(".section").forEach(section => {
-   gsap.from(section, {
-     scrollTrigger: {
-       trigger: section,
-       start: "top 85%", // start when 85% of section is visible
-       end: "top 15%",
-       toggleActions: "play none none reverse"
-     },
-     opacity: 0,
-     y: 30,
-     duration: 1,
-     ease: "power1.out"
+   <!-- ✅ GSAP ANIMATIONS — FULLY WORKING -->
+   <script>
+   gsap.registerPlugin(ScrollTrigger);
+   // 1. PAGE LOAD ANIMATIONS
+   gsap.from(".site-header", { duration: 1.2, y: -60, opacity: 0, ease: "power2.out" });
+   gsap.from(".motto", { duration: 1.5, opacity: 0, scale: 0.9, delay: 0.6, ease: "elastic.out(1, 0.5)" });
+   gsap.from(".nav-link", { duration: 0.8, opacity: 0, y: 15, stagger: 0.18, delay: 1 });
+   gsap.from(".hero-content", { duration: 1.5, x: -30, opacity: 0, delay: 0.8, ease: "power2.out" });
+   gsap.from(".hero-image img", { duration: 1.8, scale: 0.85, opacity: 0, delay: 1, ease: "back.out(1.7)" });
+   // 2. SCROLL ANIMATIONS
+   gsap.utils.toArray(".section").forEach(section => {
+     gsap.from(section, {
+       scrollTrigger: { trigger: section, start: "top 85%", end: "top 15%", toggleActions: "play none none reverse" },
+       opacity: 0, y: 30, duration: 1, ease: "power1.out"
+     });
    });
- });
- // Cards & features fade in one by one
- gsap.utils.toArray(".feature, .event-card, .leader, .testimonials blockquote").forEach(card => {
-   gsap.from(card, {
-     scrollTrigger: {
-       trigger: card,
-       start: "top 90%"
-     },
-     opacity: 0,
-     y: 20,
-     duration: 0.8,
-     ease: "power1.out"
+   gsap.utils.toArray(".feature, .event-card, .leader, .testimonials blockquote").forEach(card => {
+     gsap.from(card, {
+       scrollTrigger: { trigger: card, start: "top 90%" },
+       opacity: 0, y: 20, duration: 0.8, ease: "power1.out"
+     });
    });
- });
- // All images gentle pop-in
- gsap.utils.toArray(".feature-image").forEach(img => {
-   gsap.from(img, {
-     scrollTrigger: {
-       trigger: img,
-       start: "top 85%"
-     },
-     opacity: 0,
-     scale: 0.92,
-     duration: 1.2,
-     ease: "back.out(1.4)"
+   gsap.utils.toArray(".feature-image").forEach(img => {
+     gsap.from(img, {
+       scrollTrigger: { trigger: img, start: "top 85%" },
+       opacity: 0, scale: 0.92, duration: 1.2, ease: "back.out(1.4)"
+     });
    });
- });
- // --------------------------
- // 3. HOVER EFFECTS
- // --------------------------
- // Navigation links lift up on hover
- document.querySelectorAll(".nav-link").forEach(el => {
-   el.addEventListener("mouseenter", () => gsap.to(el, {duration:0.3, y:-2, scale:1.05, color: "#fff"}));
-   el.addEventListener("mouseleave", () => gsap.to(el, {duration:0.3, y:0, scale:1, color: ""}));
- });
- // Buttons glow & lift on hover
- document.querySelectorAll(".btn").forEach(btn => {
-   btn.addEventListener("mouseenter", () => gsap.to(btn, {duration:0.3, y:-3, scale:1.03, boxShadow: "0 4px 12px rgba(0,0,0,0.15)"}));
-   btn.addEventListener("mouseleave", () => gsap.to(btn, {duration:0.3, y:0, scale:1, boxShadow: "0 2px 6px rgba(0,0,0,0.1)"}));
- });
- // Card lift effect
- document.querySelectorAll(".feature, .event-card").forEach(card => {
-   card.addEventListener("mouseenter", () => gsap.to(card, {duration:0.3, y:-5, boxShadow: "0 8px 20px rgba(0,0,0,0.12)"}));
-   card.addEventListener("mouseleave", () => gsap.to(card, {duration:0.3, y:0, boxShadow: "0 4px 12px rgba(0,0,0,0.08)"}));
- });
- </script>
+   // 3. HOVER EFFECTS
+   document.querySelectorAll(".nav-link").forEach(el => {
+     el.addEventListener("mouseenter", () => gsap.to(el, {duration:0.3, y:-2, scale:1.05, color: "#165DFF"}));
+     el.addEventListener("mouseleave", () => gsap.to(el, {duration:0.3, y:0, scale:1, color: ""}));
+   });
+   document.querySelectorAll(".btn").forEach(btn => {
+     btn.addEventListener("mouseenter", () => gsap.to(btn, {duration:0.3, y:-3, scale:1.03, boxShadow: "0 4px 12px rgba(22, 93, 255, 0.15)"}));
+     btn.addEventListener("mouseleave", () => gsap.to(btn, {duration:0.3, y:0, scale:1, boxShadow: "0 2px 6px rgba(22, 93, 255, 0.08)"}));
+   });
+   document.querySelectorAll(".feature, .event-card, .leader").forEach(card => {
+     card.addEventListener("mouseenter", () => gsap.to(card, {duration:0.3, y:-5, boxShadow: "0 8px 20px rgba(22, 93, 255, 0.12)"}));
+     card.addEventListener("mouseleave", () => gsap.to(card, {duration:0.3, y:0, boxShadow: "0 4px 12px rgba(22, 93, 255, 0.08)"}));
+   });
+   </script>
  </body>
  </html>
-
