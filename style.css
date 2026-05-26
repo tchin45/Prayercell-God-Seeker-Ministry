@@ -1,90 +1,40 @@
-[00:29, 26/05/2026] Tyrone. Divine Assignment: <section id="leadership" class="section alt container" aria-labelledby="leadership-title">
-   <h2 id="leadership-title">Leadership</h2>
-   <div class="leaders">
-     <!-- ✅ LEAD PASTOR TYRONE CHIN – FULLY CORRECTED -->
-     <div class="leader modern-card">
-       <img src="pastor-tyrone-chin.jpg" alt="Lead Pastor Tyrone Chin" class="modern-img feature-image" />
-       <h4><i class="fas fa-user-tie"></i> Lead Pastor Tyrone Chin</h4>
-       <p>Vision, teaching and pastoral care for the church family. Guiding us with wisdom, faith, and servant leadership.</p>
-       
-       <!-- ✅ ADDED THE JIM ROHN QUOTE BELOW HIS DESCRIPTION -->
-       <blockquote style="font-style: italic; color: #165DFF; margin-top: 1rem; padding: 0.8rem; border-left: 3px solid #FF7D00;">
- …
-[17:00, 26/05/2026] Tyrone. Divine Assignment: <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1" />
-   <title>Prayercell God Seeker International Ministry</title>
-   <meta name="description" content="Prayercell God Seeker International Ministry — Reaching the lost. Restoring the broken. Bringing people home." />
-   <link rel="stylesheet" href="style.css">  
-   <!-- GSap Animation Library -->
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
- </head> 
- <body>
-   <header class="site-header">
-     <div class="container header-inner">
-       <div class="brand">
-         <h1>Prayercell God Seek…
-[17:14, 26/05/2026] Tyrone. Divine Assignment: <!DOCTYPE html>
- <html lang="en">
- <head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1" />
-   <title>Prayercell God Seeker International Ministry</title>
-   <meta name="description" content="Prayercell God Seeker International Ministry — Reaching the lost. Restoring the broken. Bringing people home." />
-   
-   <!-- ✅ ADDED: Font Awesome for icons -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   <link rel="stylesheet" href="style.css">  
-   
-   <!-- GSap Animation Library -->
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"><…
-[17:17, 26/05/2026] Tyrone. Divine Assignment: :root{
-  --accent:#2b6cb0;
-  --accent-2:#e67e22;
-  --bg:#f6f7f9;
-  --text:#222;
-  --muted:#666;
-  --container:1100px;
-}
-
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color:var(--text);
-  background:var(--bg);
-  line-height:1.5;
-}
-
-.container{
-  max-width:var(--container);
-  margin:0 auto;
-  padding:0 18px;
-}
-
-/* Header */
-.site-header{
-  background:linear-gradient(90deg,var(--accent),#1f4f7a);
-  color:#fff;
-  padding:18px 0;
-}
-.header-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
-.brand h1{margin:0;font-size:1.25rem}
-.motto{margin:4px 0 0;font-size:0.9rem;opacity:0.95}
-.main-nav a{
-  color:#fff;
-  margin-left:14px;
-  text-…
 [17:20, 26/05/2026] Tyrone. Divine Assignment: :root{
+   --accent:#2b6cb0;
+   --accent-2:#e67e22;
+   --bg:#f6f7f9;
+   --text:#222;
+   --muted:#666;
+   --light:#f8f9fa;
+   --border:#e5e7eb;
+   --shadow:0 4px 12px rgba(12,20,30,0.06);
+   --shadow-lg:0 8px 24px rgba(12,20,30,0.08);
+   --container:1100px;
+ }
+ /* Base Reset */
+ *{
+   box-sizing:border-box;
+   margin:0;
+   padding:0;
+ }
+ body{
+   margin:0;
+   font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+   color:var(--text);
+   background:var(--bg);
+   line-height:1.6;
+   font-size:16px;
+ }
+ .container{
+   max-width:var(--container);
+   margin:0 auto;
+   padding:0 18px;
+ }
+ /* --------------------------
+    HEADER & NAVIGATION
+ -------------------------- */
+ .site-header{
+   background:linear-gradient(90deg,var(--ac…
+[17:42, 26/05/2026] Tyrone. Divine Assignment: :root{
    --accent:#2b6cb0;
    --accent-2:#e67e22;
    --bg:#f6f7f9;
@@ -166,7 +116,7 @@ body{
    color:#fff;
  }
  /* --------------------------
-    HERO SECTION (FIXED!)
+    HERO SECTION ✅ FULLY FIXED
  -------------------------- */
  .hero{
    display:flex;
@@ -175,7 +125,6 @@ body{
    background:linear-gradient(180deg, rgba(43,108,176,0.06), transparent);
    min-height:80vh;
  }
- /* ✅ FIXED: matched HTML class .hero-content */
  .hero-content{
    flex:1;
    min-width:300px;
@@ -209,12 +158,48 @@ body{
    position:absolute;
    left:0;
  }
+ /* ✅ BUTTONS — NOW SHOW AS PROPER BUTTONS */
  .hero-ctas{
    display:flex;
    gap:12px;
    flex-wrap:wrap;
    margin-top:20px;
  }
+ .btn{
+   display:inline-block !important;
+   padding:10px 18px !important;
+   background:#fff !important;
+   color:var(--accent) !important;
+   border-radius:6px !important;
+   text-decoration:none !important;
+   border:1px solid rgba(0,0,0,0.06) !important;
+   font-weight:600 !important;
+   font-size:0.95rem !important;
+   transition:all 0.3s ease !important;
+   cursor:pointer !important;
+   text-align:center !important;
+ }
+ .btn.small{padding:8px 14px !important;font-size:0.85rem !important;}
+ .btn.primary{
+   background:var(--accent) !important;
+   color:#fff !important;
+   border:none !important;
+ }
+ .btn.primary:hover{
+   background:#1f4f7a !important;
+   transform:translateY(-2px) !important;
+   box-shadow:var(--shadow) !important;
+ }
+ .btn.outline{
+   background:transparent !important;
+   border:2px solid var(--accent) !important;
+   color:var(--accent) !important;
+ }
+ .btn.outline:hover{
+   background:var(--accent) !important;
+   color:#fff !important;
+ }
+ .btn.large{padding:14px 24px !important;font-size:1.05rem !important;}
  .hero-image{
    flex:1;
    min-width:300px;
@@ -228,45 +213,7 @@ body{
    margin:0 auto;
  }
  /* --------------------------
-    BUTTONS
- -------------------------- */
- .btn{
-   display:inline-block;
-   padding:10px 18px;
-   background:#fff;
-   color:var(--accent);
-   border-radius:6px;
-   text-decoration:none;
-   border:1px solid rgba(0,0,0,0.06);
-   font-weight:600;
-   font-size:0.95rem;
-   transition:all 0.3s ease;
-   cursor:pointer;
-   text-align:center;
- }
- .btn.small{padding:8px 14px;font-size:0.85rem}
- .btn.primary{
-   background:var(--accent);
-   color:#fff;
-   border:none;
- }
- .btn.primary:hover{
-   background:#1f4f7a;
-   transform:translateY(-2px);
-   box-shadow:var(--shadow);
- }
- .btn.outline{
-   background:transparent;
-   border:2px solid var(--accent);
-   color:var(--accent);
- }
- .btn.outline:hover{
-   background:var(--accent);
-   color:#fff;
- }
- .btn.large{padding:14px 24px;font-size:1.05rem}
- /* --------------------------
-    SECTIONS & LAYOUT
+    REST OF STYLES
  -------------------------- */
  .section{padding:50px 0}
  .section.alt{
@@ -287,7 +234,6 @@ body{
    margin:0 auto 32px;
    font-size:1.1rem;
  }
- /* Grid Layouts */
  .grid-3{
    display:grid;
    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -310,9 +256,6 @@ body{
    margin-bottom:12px;
    font-size:1.2rem;
  }
- /* --------------------------
-    TESTIMONIALS
- -------------------------- */
  .testimonials{
    display:grid;
    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -328,9 +271,6 @@ body{
    color:var(--text);
    border-left:4px solid var(--accent-2);
  }
- /* --------------------------
-    EVENTS
- -------------------------- */
  .events-grid{
    display:grid;
    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -360,9 +300,6 @@ body{
    margin-bottom:8px;
    font-size:1.1rem;
  }
- /* --------------------------
-    RESOURCES & PARTNERS
- -------------------------- */
  .resource-links{
    display:flex;
    gap:16px;
@@ -397,9 +334,6 @@ body{
    transition:opacity 0.3s ease;
  }
  .partners-logos img:hover{opacity:1}
- /* --------------------------
-    CONTACT & MAP
- -------------------------- */
  .contact-grid{
    display:grid;
    grid-template-columns:1fr 1fr;
@@ -426,9 +360,6 @@ body{
    border-radius:12px;
    box-shadow:var(--shadow);
  }
- /* --------------------------
-    FAQ
- -------------------------- */
  .faq{max-width:800px;margin:0 auto;}
  .faq details{
    background:#fff;
@@ -448,9 +379,6 @@ body{
    color:var(--muted);
    padding-left:12px;
  }
- /* --------------------------
-    ✅ LEADERSHIP (ADDED MISSING STYLES)
- -------------------------- */
  .leaders{
    display:flex;
    gap:24px;
@@ -472,7 +400,6 @@ body{
    transform:translateY(-4px);
    box-shadow:var(--shadow-lg);
  }
- /* ✅ Added: Modern card & image styles */
  .modern-card{
    background:#fff;
    border-radius:16px;
@@ -498,7 +425,6 @@ body{
    color:var(--muted);
    margin-bottom:16px;
  }
- /* ✅ Added: Quote block style */
  .leader blockquote{
    font-style:italic;
    color:var(--accent);
@@ -508,9 +434,6 @@ body{
    background:var(--light);
    border-radius:4px;
  }
- /* --------------------------
-    NEWSLETTER FORM
- -------------------------- */
  .subscribe-form{
    display:flex;
    gap:12px;
@@ -532,9 +455,6 @@ body{
    border-color:var(--accent);
    box-shadow:0 0 0 3px rgba(43,108,176,0.1);
  }
- /* --------------------------
-    FOOTER
- -------------------------- */
  .site-footer{
    background:#1f2937;
    color:#fff;
@@ -562,9 +482,6 @@ body{
    text-decoration:none;
  }
  .social a:hover{color:#fff;}
- /* --------------------------
-    ✅ RESPONSIVE FIXES
- -------------------------- */
  @media (max-width:880px){
    .header-inner{flex-direction:column;align-items:flex-start;text-align:center;width:100%;}
    .main-nav ul{justify-content:center;width:100%;margin-top:12px;}
@@ -578,9 +495,8 @@ body{
  @media (max-width:480px){
    .hero-title{font-size:1.5rem;}
    .section{padding:30px 0;}
-   .btn{width:100%;margin:4px 0;}
+   .btn{width:100% !important;margin:4px 0 !important;}
  }
- /* ✅ Accessibility */
  .sr-only{
    position:absolute;
    width:1px;
